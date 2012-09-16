@@ -81,9 +81,9 @@ class bemhtml {
 	protected function v8js() {
 		if (empty(static::$v8js)) {
 			static::$v8js = new v8js();
-			static::$v8js->pprint = function ($value, $to_term = true) {
+			static::$v8js->pprint = function ($value, $to_term = false) {
 				$s = print_r($value, 1); // pformat?
-				($to_term) && print($s);
+				($to_term) && syslog(LOG_INFO, $s);
 				return $s;
 			};
 			static::$v8js->executeString("pprint = PHP.pprint;"); // todo: uhh... bad v8js. bbad!

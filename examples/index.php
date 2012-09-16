@@ -1,11 +1,11 @@
 <?php
 
-require_once "../phpbem.php";
+require_once "../phpbem/phpbem.php";
 
 // use bem\bemhtml;
 
 // Path with pages dirs
-$wwwpath = __DIR__ . 'www';
+$wwwpath = __DIR__ . '/www';
 
 // Create BEM renderer
 $bem = new bemhtml($wwwpath);
