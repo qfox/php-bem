@@ -1,7 +1,7 @@
 php-bem
 =======
 
-BEM render library usign v8js extension (pecl)
+BEM render library usign v8js extension (https://github.com/preillyme/v8js)
 
 Based on https://github.com/bem/bem-bl-test.git
 
