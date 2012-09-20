@@ -6,7 +6,9 @@
 
 include "phpbem.php";
 
-define('wwwroot', realpath(__DIR__ . '/../examples/www'));
+use \bem\bemhtml;
+
+define('wwwroot', realpath(__DIR__ . '/../bem-bl-example/www'));
 
 $bemhtml = new bemhtml(wwwroot);
 $object = array(

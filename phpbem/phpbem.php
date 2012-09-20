@@ -10,7 +10,10 @@
  * @todo make support of .bem/level file
  */
 
-// namespace bem;
+namespace bem;
+
+use \v8js;
+use ErrorException;
 
 class bemhtml {
 
@@ -127,6 +130,9 @@ class bemhtml {
 	protected function load_pagejs_data() {
 		$jsData = array();
 		$files = static::fs_fetch_files($this->pagePath, array_merge($this->extraFiles, $this->techs), false);
+		if (!$files) {
+			throw new ErrorException('no files found at path '.$this->pagePath);
+		}
 		foreach ($files as $fileName) {
 			if (!is_readable($fileName) || !is_file($fileName)) {
 				$jsData[] = '///! file skipped: '.$fileName;
@@ -246,4 +252,7 @@ class bemhtml {
 
 		return $limit === 1 ? reset ($results) : $results;
 	}
+
+	/** helpers */
+
 }
