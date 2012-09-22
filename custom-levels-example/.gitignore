@@ -1,0 +1,5 @@
+.bem/
+!.bem/*.js
+core/bem-bl/
+*.bemdecl.js
+!*.bemjson.js
