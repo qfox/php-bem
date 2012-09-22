@@ -47,7 +47,8 @@ How to use it
 ```php
 
 // include class
-require "phpbem.php";
+require "./phpbem.php";
+use \bem\bemhtml;
 
 // and use it like that:
 $bem = new bemhtml($rootpath, $options = array());

@@ -15,7 +15,7 @@ render = function(data, env) {
                 url: '#',
                 target: '_blank',
                 title: 'button',
-                content: pprint(data)
+                content: pprint(data) // callback from php
             },
             {
                 block: 'b-link',
@@ -23,7 +23,7 @@ render = function(data, env) {
                 url: '#',
                 target: '_blank',
                 title: 'button',
-                content: 'Привет!'
+                content: data['text'] || 'Привет!'
             },
         ]
     }
