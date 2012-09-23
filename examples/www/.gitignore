@@ -1,7 +1,0 @@
-bem-bl
-pages/*/*.css
-pages/*/*.js
-!*.priv.js
-!pages/*/*.bemjson.js
-!pages/*/*.en.js
-pages/*/*.html
