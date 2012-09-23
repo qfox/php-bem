@@ -1,5 +1,10 @@
-.bem/
-!.bem/*.js
 core/bem-bl/
-*.bemdecl.js
-!*.bemjson.js
+node_modules
+.DS_Store
+.idea
+.svn
+*/*/pages*/*/*.*
+!*/*/pages*/*/*.bemjson.js
+!*/*/pages*/.bem/*.js
+.bem/cache/
+.bem/snapshots/
