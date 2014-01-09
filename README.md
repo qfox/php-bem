@@ -31,7 +31,7 @@ Clone repository to some place on your pc and prepare bem to use:
 ```bash
 cd ~/repos
 git clone git://github.com/zxqfox/php-bem.git -b examples
-cd bem-php
+cd php-bem
 pushd .; cd bem-bl-example/www; npm i; make; popd
 ```
 
