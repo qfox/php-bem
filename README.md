@@ -10,12 +10,14 @@ Based on https://github.com/bem/bem-bl-test.git
 How to start?
 -------------
 
-That class requires on php5.3+ and v8js extension.
+That class requires on php5.3+ and v8js extension. Also it needs nodejs0.8+.
 
 ### What you need to use it?
 ```bash
-$ sudo pecl install v8js
+$ sudo pecl install v8js-0.1.3
 ```
+
+You can try newer version but I was stopped on 0.1.3 at the moment.
 
 When you finished you can verify your new extension installation:
 ```bash
@@ -27,10 +29,10 @@ v8js
 
 Clone repository to some place on your pc and prepare bem to use:
 ```bash
-cd ~
-git clone git://github.com/zxqfox/php-bem.git
+cd ~/repos
+git clone git://github.com/zxqfox/php-bem.git -b examples
 cd bem-php
-pushd .; cd examples/www; make; popd
+pushd .; cd bem-bl-example/www; npm i; make; popd
 ```
 
 Done. Let's try it now!

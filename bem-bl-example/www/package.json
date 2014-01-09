@@ -1,0 +1,14 @@
+{
+  "name": "php-bem-bl-examples",
+  "version": "0.0.1",
+  "description": "examples for php-bem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)",
+  "license": "MIT",
+  "dependencies": {
+    "bem": "0.5.33"
+  }
+}
