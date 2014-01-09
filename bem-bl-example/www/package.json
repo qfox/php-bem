@@ -9,6 +9,8 @@
   "author": "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)",
   "license": "MIT",
   "dependencies": {
-    "bem": "0.5.33"
+    "bem": "0.5.33",
+    "xjst": "0.4.13",
+    "ometajs": "3.1.19"
   }
 }
