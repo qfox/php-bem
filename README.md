@@ -1,4 +1,14 @@
-php-bem
+Deprecation notes
+------
+This is a stillborn project.
+
+If you are looking for BEM-based rendering library for php you should take a look [bem/bh composer package](https://github.com/zxqfox/bh-php) or just use `bem-proxy` between your `php-fpm` and `nginx` servers to render pages  on the fly.
+
+Don't waste your time with v8js+php. :palm_tree:
+
+----
+
+php-bem (deprecated)
 =======
 
 BEM render library usign v8js extension (https://github.com/preillyme/v8js)
